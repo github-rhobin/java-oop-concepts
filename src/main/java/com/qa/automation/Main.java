@@ -17,7 +17,7 @@ abstract class Mammal {
 class Human extends Mammal {
     // ENCAPSULATION: private variables, hidden from direct outside access
     private int age;
-    private String name;
+    private final String name;
 
     // Constructor to initialize human objects
     public Human(String name) {
