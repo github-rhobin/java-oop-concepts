@@ -1,6 +1,6 @@
 # Java OOP Concepts - Simplified Analogy
 
-This project is a single-file Java program designed to illustrate the core concepts of Object-Oriented Programming (OOP) using a relatable, respectful context: a **Family** structure consisting of humans and pets.
+This project is a single-file Java program designed to illustrate the core concepts of Object-Oriented Programming (OOP) using a relatable context: a **Family** structure consisting of humans and pets.
 
 ## 🛠️ Project Structure
 The code is contained entirely within a single source file, utilizing package-private top-level classes alongside a single `public class Main` which houses the application's entry point.
@@ -40,14 +40,16 @@ The code is contained entirely within a single source file, utilizing package-pr
  └──────────────┬───────────────┘       └───────────┬───────────┘
                 │                                   │
                 │     INSTANTIATED OBJECTS          │
-                ▼ (via 'new' keyword)               ▼
+                ▼      (via 'new' keyword)          ▼
        ┌─────────────────┐                 ┌─────────────────┐
        │     OBJECT      │                 │     OBJECT      │
        │  alex (Human)   │                 │     (Dog)       │
        └────────┬────────┘                 └────────┬────────┘
                 │                                   │
                 └─────────────────┬─────────────────┘
-                                  │ Collected into
+                                  |
+                             Collected into
+                                  |
                                   ▼
  ┌──────────────────────────────────────────────────────────────┐
  │                      Mammal[] family                         │
