@@ -87,18 +87,32 @@ Before running this program, ensure you have the **Java Development Kit (JDK)** 
 
 ---
 
-## 💻 How to Run
+## 💻 Execution Guide
 
-Open your terminal or command prompt in the directory where `Main.java` is saved and execute these two simple steps:
+You can run this application either instantly through a modern IDE or manually using the command-line interface.
 
-### 1. Compile the source file
-Use the Java compiler to compile the `.java` file into executable bytecode.
-```bash
-javac Main.java
-```
+### Method 1: Using an IDE (Recommended)
+1. Open the project root directory in **IntelliJ IDEA**, **Eclipse**, or **VS Code**.
+2. Navigate to `src/main/java/com/qa/automation/Main.java`.
+3. Click the green **Run** arrow next to the `main` method or press `Shift + F10` (IntelliJ default).
 
-### 2. Run the generated class file
-Use the Java launcher to run the generated `.class` file.
-```bash
-java Main
-```
+### Method 2: Manual Command-Line Execution (cmd/Terminal)
+Because this application uses a packaged namespace (`package com.qa.automation;`), Java requires execution from the root source directory to correctly resolve the package structure at runtime.
+
+1. **Compile the Class:** Navigate to the source folder and compile the code:
+   ```bash
+   cd src/main/java/com/qa/automation
+   javac Main.java
+   ```
+
+2. **Reset to Root Source Directory:** Move back up the directory tree to the base `java` folder:
+   ```bash
+   cd ../../../../
+   ```
+   *Your terminal path should now end precisely in `...\src\main\java>`.*
+
+3. **Execute via Package Pointer:** Launch the program using its fully qualified name (do not append `.class`):
+   ```bash
+   java com.qa.automation.Main
+   ```
+
